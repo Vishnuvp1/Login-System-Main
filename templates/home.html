@@ -1,0 +1,101 @@
+
+{% extends 'base.html' %}
+
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+
+ <!-- ======= Header ======= -->
+ <header id="header" class=" ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="./home.html"></a>WELCOME<span>.</span></a></h1>
+     
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <a href="{% url 'logout' %}" class="get-started-btn scrollto">LOGOUT</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Powerful Digital Solutions With Us.</h1>
+          <h2>We are team of talented digital marketers</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="">Content marketing</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">Search engine marketing</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">Display Advertising</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">Mobile Marketing</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line"></i>
+            <h3><a href="">Social Media Marketing.</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="../static/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Full Service Digital Marketing Agency</h3>
+            <p class="fst-italic">
+              Reaching a deep understanding of what your customer needs is part of our business.
+            </p>
+            <ul style="list-style-type:disc">
+              <li>We have a well structured social marketing approach based on strategy, analysis and timely execution.</li>
+              <li>Our SEO experts have the right kind of aptitudes and knowledge in understanding what would be better for the site as per new search technologies.</li>
+              <li>Data driven decisions by our analytic consultants will revolutionize the online performance.</li>
+              <li>Get immediate results with PPC campaigns from our Google & Bing certified teams in Kochi-kerala and Bangalore designed to maximise your sales !</li>
+            </ul>
+            <p>
+              let’s get back to the question at hand—Is digital marketing right for you? If you’re serious about taking your business to the next level, it absolutely is. Luckily, we can help.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+{% endblock %}
